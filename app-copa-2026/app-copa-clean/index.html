@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copa 2026 | App de Acompanhamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <span class="eyebrow">FIFA World Cup 2026</span>
+      <h1>Acompanhe a Copa</h1>
+      <p>Adicione placares, veja os grupos atualizados, classificação geral e simule o campeão no mata-mata.</p>
+      <div id="cloudStatus" class="cloud-status warn">Carregando conexão com a nuvem...</div>
+    </div>
+    <div class="hero-card">
+      <span>🏆</span>
+      <strong id="championName">Campeão</strong>
+      <small>Defina no simulador</small>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="grupos">Grupos</button>
+    <button class="tab" data-tab="jogos">Jogos</button>
+    <button class="tab" data-tab="geral">Classificação geral</button>
+    <button class="tab" data-tab="mata">Mata-mata</button>
+  </nav>
+
+  <main>
+    <section id="grupos" class="panel active">
+      <div class="section-title">
+        <h2>Grupos</h2>
+        <button class="ghost" id="resetBtn">Limpar placares</button>
+      </div>
+      <div id="groupsGrid" class="groups-grid"></div>
+    </section>
+
+    <section id="jogos" class="panel">
+      <div class="section-title">
+        <h2>Adicionar placares</h2>
+        <p>Os grupos são atualizados automaticamente.</p>
+      </div>
+      <div id="matchesList" class="matches-list"></div>
+    </section>
+
+    <section id="geral" class="panel">
+      <div class="section-title">
+        <h2>Classificação geral</h2>
+        <p>Ordenado por pontos, saldo de gols e gols marcados.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Seleção</th><th>Grupo</th><th>J</th><th>V</th><th>E</th><th>D</th><th>SG</th><th>PTS</th></tr>
+          </thead>
+          <tbody id="generalTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="mata" class="panel">
+      <div class="section-title">
+        <h2>Simulador mata-mata</h2>
+        <p>Escolha os classificados e coloque os placares até a final.</p>
+      </div>
+      <div class="bracket-actions">
+        <button class="primary" id="fillQualified">Preencher com classificados</button>
+        <button class="ghost" id="clearBracket">Limpar mata-mata</button>
+      </div>
+      <div id="bracket" class="bracket"></div>
+    </section>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script type="module" src="firebase-app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
