@@ -1,6 +1,6 @@
 const grupos = {
   A: [['México','mx'],['África do Sul','za'],['Coreia do Sul','kr'],['Tchéquia','cz']],
-  B: [['Canadá','ca'],['Suíça','ch'],['Bósnia e Herzegovina','ba'],['Catar','qa']],
+  B: [['Canadá','ca'],['Suíça','ch'],['Bósnia','ba'],['Catar','qa']],
   C: [['Brasil','br'],['Marrocos','ma'],['Escócia','gb-sct'],['Haiti','ht']],
   D: [['Estados Unidos','us'],['Paraguai','py'],['Turquia','tr'],['Austrália','au']],
   E: [['Alemanha','de'],['Curaçao','cw'],['Costa do Marfim','ci'],['Equador','ec']],
@@ -9,7 +9,7 @@ const grupos = {
   H: [['Uruguai','uy'],['Cabo Verde','cv'],['Espanha','es'],['Arábia Saudita','sa']],
   I: [['França','fr'],['Senegal','sn'],['Noruega','no'],['Iraque','iq']],
   J: [['Argentina','ar'],['Argélia','dz'],['Áustria','at'],['Jordânia','jo']],
-  K: [['Portugal','pt'],['Uzbequistão','uz'],['Colômbia','co'],['República Democrática do Congo','cd']],
+  K: [['Portugal','pt'],['Uzbequistão','uz'],['Colômbia','co'],['Congo','cd']],
   L: [['Inglaterra','gb-eng'],['Croácia','hr'],['Gana','gh'],['Panamá','pa']]
 };
 
