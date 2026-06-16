@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "app-copa-2026/app-copa-clean",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

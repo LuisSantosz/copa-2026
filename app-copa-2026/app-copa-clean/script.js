@@ -1,16 +1,16 @@
-const groups = {
-  A:[['Mexico','mx'],['South Africa','za'],['South Korea','kr'],['Czechia','cz']],
-  B:[['Canada','ca'],['Switzerland','ch'],['Bosnia and Herzegovina','ba'],['Qatar','qa']],
-  C:[['Brazil','br'],['Morocco','ma'],['Scotland','gb-sct'],['Haiti','ht']],
-  D:[['USA','us'],['Paraguay','py'],['Türkiye','tr'],['Australia','au']],
-  E:[['Germany','de'],['Curaçao','cw'],['Côte d’Ivoire','ci'],['Ecuador','ec']],
-  F:[['Netherlands','nl'],['Sweden','se'],['Tunisia','tn'],['Japan','jp']],
-  G:[['Belgium','be'],['Iran','ir'],['New Zealand','nz'],['Egypt','eg']],
-  H:[['Uruguay','uy'],['Cape Verde','cv'],['Spain','es'],['Saudi Arabia','sa']],
-  I:[['France','fr'],['Senegal','sn'],['Norway','no'],['Iraq','iq']],
-  J:[['Argentina','ar'],['Algeria','dz'],['Austria','at'],['Jordan','jo']],
-  K:[['Portugal','pt'],['Uzbekistan','uz'],['Colombia','co'],['DR Congo','cd']],
-  L:[['England','gb-eng'],['Croatia','hr'],['Ghana','gh'],['Panama','pa']]
+const grupos = {
+  A: [['México','mx'],['África do Sul','za'],['Coreia do Sul','kr'],['Tchéquia','cz']],
+  B: [['Canadá','ca'],['Suíça','ch'],['Bósnia e Herzegovina','ba'],['Catar','qa']],
+  C: [['Brasil','br'],['Marrocos','ma'],['Escócia','gb-sct'],['Haiti','ht']],
+  D: [['Estados Unidos','us'],['Paraguai','py'],['Turquia','tr'],['Austrália','au']],
+  E: [['Alemanha','de'],['Curaçao','cw'],['Costa do Marfim','ci'],['Equador','ec']],
+  F: [['Holanda','nl'],['Suécia','se'],['Tunísia','tn'],['Japão','jp']],
+  G: [['Bélgica','be'],['Irã','ir'],['Nova Zelândia','nz'],['Egito','eg']],
+  H: [['Uruguai','uy'],['Cabo Verde','cv'],['Espanha','es'],['Arábia Saudita','sa']],
+  I: [['França','fr'],['Senegal','sn'],['Noruega','no'],['Iraque','iq']],
+  J: [['Argentina','ar'],['Argélia','dz'],['Áustria','at'],['Jordânia','jo']],
+  K: [['Portugal','pt'],['Uzbequistão','uz'],['Colômbia','co'],['República Democrática do Congo','cd']],
+  L: [['Inglaterra','gb-eng'],['Croácia','hr'],['Gana','gh'],['Panamá','pa']]
 };
 
 const els = {
@@ -41,7 +41,7 @@ let saveTimer = null;
 let applyingCloudUpdate = false;
 let cloudStarted = false;
 
-const rounds = [['32 avos',16], ['Oitavas',8], ['Quartas',4], ['Semifinal',2], ['Final',1]];
+const rounds = [['32',16], ['Oitavas',8], ['Quartas',4], ['Semifinal',2], ['Final',1]];
 
 function appPayload(){
   return {
